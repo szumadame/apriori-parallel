@@ -3,26 +3,27 @@ from collections import defaultdict
 from itertools import combinations
 
 
-data = {
-    "Transaction ID": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10"],
-    "Categories": [
-        "Fiction, Mystery, Romance",
-        "Sci-Fi, History",
-        "Fiction, Sci-Fi, Biography",
-        "History, Biography",
-        "Mystery, Sci-Fi, History",
-        "Fiction, Sci-Fi",
-        "Fiction, Mystery, History, Sci-Fi",
-        "Romance, Biography",
-        "Fiction, Mystery, Sci-Fi",
-        "Sci-Fi, History"
-    ]
-}
+# data = {
+#     "Transaction ID": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10"],
+#     "Categories": [
+#         "Fiction, Mystery, Romance",
+#         "Sci-Fi, History",
+#         "Fiction, Sci-Fi, Biography",
+#         "History, Biography",
+#         "Mystery, Sci-Fi, History",
+#         "Fiction, Sci-Fi",
+#         "Fiction, Mystery, History, Sci-Fi",
+#         "Romance, Biography",
+#         "Fiction, Mystery, Sci-Fi",
+#         "Sci-Fi, History"
+#     ]
+# }
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-min_support_threshold = 0.2
-min_confidence_threshold = 0.7
+
+df = pd.read_pickle("/workspaces/apriori-parallel/data/chicago_crime_df.pkl")
+print(df[:5])
 
 
 def calculate_support(df, itemset_col, candidate_itemsets):
@@ -138,9 +139,8 @@ if __name__ == "__main__":
     all_items.update(categories.split(", "))
   
   itemset_col = 'Categories'
-  min_support_threshold = 0.4
-  min_confidence_threshold = 0.6
-
+  min_support_threshold = 0.05
+  min_confidence_threshold = 0.1
   all_supports = {}
   size = 1
 
