@@ -1,5 +1,6 @@
 import os
 import pprint
+import time
 import pandas as pd
 import numpy as np
 from collections import defaultdict
@@ -76,22 +77,25 @@ def calculate_partial_support(args):
     partition_idx, partition_df, itemset_col, candidate_itemsets = args
 
     pid = os.getpid()  # Process ID
-    print(f"[Process {pid}] Starting partition {partition_idx} with {len(partition_df)} transactions.")  
+    #print(f"[Process {pid}] Starting partition {partition_idx} with {len(partition_df)} transactions.")  
     #print(partition_df)
     return calculate_support(partition_df, itemset_col, candidate_itemsets)
 
 
 def calculate_support_parallel(df, itemset_col, candidate_itemsets, n_partitions=None):
-    print("Partitions used: ", n_partitions)
+    #print("Partitions used: ", n_partitions)
     if n_partitions is None:
         n_partitions = cpu_count()
 
+    #t0 = time.time()
     partitions = np.array_split(df, n_partitions)
     args = [(idx, partition, itemset_col, candidate_itemsets) for idx, partition in enumerate(partitions)]
 
     with Pool(processes=n_partitions) as pool:
         local_supports_list = pool.map(calculate_partial_support, args)
-
+    #t3 = time.time()
+    #print("This is time for partitiong: ", t3-t0)
+    
     # aggregate partial counts (weighted by partition sizes)
     total_transactions = len(df)
     aggregated_counts = {}

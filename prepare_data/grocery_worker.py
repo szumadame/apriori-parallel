@@ -43,7 +43,7 @@ else:
     print("Frequent Itemsets:")
     print(frequent_itemsets)
 
-    minconf = 0.6
+    minconf = 0.3
     rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=minconf)
     print("\nAssociation Rules:")
     print(rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])

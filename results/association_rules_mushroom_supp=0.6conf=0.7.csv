@@ -1,0 +1,224 @@
+Antecedent,Consequent,Confidence
+gill-spacing=c,veil-color=w,0.9718144450968879
+veil-color=w,gill-spacing=c,0.8354366481574962
+gill-spacing=c,ring-number=o,0.9489136817381092
+ring-number=o,gill-spacing=c,0.8632478632478632
+gill-size=b,veil-color=w,0.9657875980042766
+gill-spacing=c,veil-type=p,1.0
+veil-type=p,gill-spacing=c,0.8385032003938946
+gill-size=b,ring-number=o,0.8866714183891662
+ring-number=o,veil-color=w,0.9732905982905983
+veil-color=w,ring-number=o,0.9197375063099444
+stalk-surface-above-ring=s,veil-color=w,0.9629057187017002
+gill-size=b,veil-type=p,1.0
+gill-attachment=f,gill-spacing=c,0.834217841799343
+gill-spacing=c,gill-attachment=f,0.9691720493247211
+gill-size=b,gill-attachment=f,0.9625801853171776
+ring-number=o,veil-type=p,1.0
+veil-type=p,ring-number=o,0.9217134416543574
+stalk-surface-above-ring=s,veil-type=p,1.0
+gill-attachment=f,veil-color=w,0.9989891331817033
+veil-color=w,gill-attachment=f,0.997728419989904
+gill-attachment=f,ring-number=o,0.9219105382865808
+ring-number=o,gill-attachment=f,0.9743589743589743
+veil-color=w,veil-type=p,1.0
+veil-type=p,veil-color=w,0.9753815854258986
+gill-attachment=f,veil-type=p,1.0
+veil-type=p,gill-attachment=f,0.9741506646971935
+stalk-surface-above-ring=s,gill-attachment=f,0.9629057187017002
+stalk-surface-below-ring=s,veil-type=p,1.0
+gill-spacing=c,"ring-number=o, veil-color=w",0.920728126834997
+ring-number=o,"gill-spacing=c, veil-color=w",0.8376068376068376
+veil-color=w,"gill-spacing=c, ring-number=o",0.7915194346289752
+"gill-spacing=c, ring-number=o",veil-color=w,0.9702970297029703
+"gill-spacing=c, veil-color=w",ring-number=o,0.9474320241691843
+"ring-number=o, veil-color=w",gill-spacing=c,0.8605927552140504
+stalk-surface-above-ring=s,"veil-color=w, veil-type=p",0.9629057187017002
+"stalk-surface-above-ring=s, veil-color=w",veil-type=p,1.0
+"stalk-surface-above-ring=s, veil-type=p",veil-color=w,0.9629057187017002
+gill-attachment=f,"gill-spacing=c, veil-color=w",0.834217841799343
+gill-spacing=c,"gill-attachment=f, veil-color=w",0.9691720493247211
+veil-color=w,"gill-attachment=f, gill-spacing=c",0.8331650681474003
+"gill-attachment=f, gill-spacing=c",veil-color=w,1.0
+"gill-attachment=f, veil-color=w",gill-spacing=c,0.8350619782443715
+"gill-spacing=c, veil-color=w",gill-attachment=f,0.9972809667673717
+gill-attachment=f,"ring-number=o, veil-color=w",0.9208996714682841
+ring-number=o,"gill-attachment=f, veil-color=w",0.9732905982905983
+veil-color=w,"gill-attachment=f, ring-number=o",0.9197375063099444
+"gill-attachment=f, ring-number=o",veil-color=w,0.9989035087719298
+"gill-attachment=f, veil-color=w",ring-number=o,0.9218315203642803
+"ring-number=o, veil-color=w",gill-attachment=f,1.0
+gill-attachment=f,"gill-spacing=c, ring-number=o",0.7925195855446044
+gill-spacing=c,"gill-attachment=f, ring-number=o",0.920728126834997
+ring-number=o,"gill-attachment=f, gill-spacing=c",0.8376068376068376
+"gill-attachment=f, gill-spacing=c",ring-number=o,0.9500151469251741
+"gill-attachment=f, ring-number=o",gill-spacing=c,0.8596491228070176
+"gill-spacing=c, ring-number=o",gill-attachment=f,0.9702970297029703
+gill-spacing=c,"ring-number=o, veil-type=p",0.9489136817381092
+ring-number=o,"gill-spacing=c, veil-type=p",0.8632478632478632
+veil-type=p,"gill-spacing=c, ring-number=o",0.7956671590349581
+"gill-spacing=c, ring-number=o",veil-type=p,1.0
+"gill-spacing=c, veil-type=p",ring-number=o,0.9489136817381092
+"ring-number=o, veil-type=p",gill-spacing=c,0.8632478632478632
+gill-size=b,"veil-color=w, veil-type=p",0.9657875980042766
+"gill-size=b, veil-color=w",veil-type=p,1.0
+"gill-size=b, veil-type=p",veil-color=w,0.9657875980042766
+gill-size=b,"gill-attachment=f, veil-color=w",0.9625801853171776
+"gill-attachment=f, gill-size=b",veil-color=w,1.0
+"gill-size=b, veil-color=w",gill-attachment=f,0.9966789667896679
+gill-attachment=f,"gill-spacing=c, veil-type=p",0.834217841799343
+gill-spacing=c,"gill-attachment=f, veil-type=p",0.9691720493247211
+veil-type=p,"gill-attachment=f, gill-spacing=c",0.8126538650910882
+"gill-attachment=f, gill-spacing=c",veil-type=p,1.0
+"gill-attachment=f, veil-type=p",gill-spacing=c,0.834217841799343
+"gill-spacing=c, veil-type=p",gill-attachment=f,0.9691720493247211
+gill-attachment=f,"ring-number=o, veil-type=p",0.9219105382865808
+ring-number=o,"gill-attachment=f, veil-type=p",0.9743589743589743
+veil-type=p,"gill-attachment=f, ring-number=o",0.8980797636632201
+"gill-attachment=f, ring-number=o",veil-type=p,1.0
+"gill-attachment=f, veil-type=p",ring-number=o,0.9219105382865808
+"ring-number=o, veil-type=p",gill-attachment=f,0.9743589743589743
+stalk-surface-above-ring=s,"gill-attachment=f, veil-color=w",0.9629057187017002
+"gill-attachment=f, stalk-surface-above-ring=s",veil-color=w,1.0
+"stalk-surface-above-ring=s, veil-color=w",gill-attachment=f,1.0
+gill-spacing=c,"veil-color=w, veil-type=p",0.9718144450968879
+veil-color=w,"gill-spacing=c, veil-type=p",0.8354366481574962
+veil-type=p,"gill-spacing=c, veil-color=w",0.8148695224027572
+"gill-spacing=c, veil-color=w",veil-type=p,1.0
+"gill-spacing=c, veil-type=p",veil-color=w,0.9718144450968879
+"veil-color=w, veil-type=p",gill-spacing=c,0.8354366481574962
+gill-size=b,"gill-attachment=f, veil-type=p",0.9625801853171776
+"gill-attachment=f, gill-size=b",veil-type=p,1.0
+"gill-size=b, veil-type=p",gill-attachment=f,0.9625801853171776
+stalk-surface-above-ring=s,"gill-attachment=f, veil-type=p",0.9629057187017002
+"gill-attachment=f, stalk-surface-above-ring=s",veil-type=p,1.0
+"stalk-surface-above-ring=s, veil-type=p",gill-attachment=f,0.9629057187017002
+gill-attachment=f,"veil-color=w, veil-type=p",0.9989891331817033
+veil-color=w,"gill-attachment=f, veil-type=p",0.997728419989904
+veil-type=p,"gill-attachment=f, veil-color=w",0.9731659281142294
+"gill-attachment=f, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, veil-type=p",veil-color=w,0.9989891331817033
+"veil-color=w, veil-type=p",gill-attachment=f,0.997728419989904
+gill-size=b,"ring-number=o, veil-type=p",0.8866714183891662
+"gill-size=b, ring-number=o",veil-type=p,1.0
+"gill-size=b, veil-type=p",ring-number=o,0.8866714183891662
+ring-number=o,"veil-color=w, veil-type=p",0.9732905982905983
+veil-color=w,"ring-number=o, veil-type=p",0.9197375063099444
+veil-type=p,"ring-number=o, veil-color=w",0.897095027080256
+"ring-number=o, veil-color=w",veil-type=p,1.0
+"ring-number=o, veil-type=p",veil-color=w,0.9732905982905983
+"veil-color=w, veil-type=p",ring-number=o,0.9197375063099444
+gill-attachment=f,"gill-spacing=c, ring-number=o, veil-color=w",0.7925195855446044
+gill-spacing=c,"gill-attachment=f, ring-number=o, veil-color=w",0.920728126834997
+ring-number=o,"gill-attachment=f, gill-spacing=c, veil-color=w",0.8376068376068376
+veil-color=w,"gill-attachment=f, gill-spacing=c, ring-number=o",0.7915194346289752
+"gill-attachment=f, gill-spacing=c","ring-number=o, veil-color=w",0.9500151469251741
+"gill-attachment=f, ring-number=o","gill-spacing=c, veil-color=w",0.8596491228070176
+"gill-attachment=f, veil-color=w","gill-spacing=c, ring-number=o",0.793321527953453
+"gill-spacing=c, ring-number=o","gill-attachment=f, veil-color=w",0.9702970297029703
+"gill-spacing=c, veil-color=w","gill-attachment=f, ring-number=o",0.9474320241691843
+"ring-number=o, veil-color=w","gill-attachment=f, gill-spacing=c",0.8605927552140504
+"gill-attachment=f, gill-spacing=c, ring-number=o",veil-color=w,1.0
+"gill-attachment=f, gill-spacing=c, veil-color=w",ring-number=o,0.9500151469251741
+"gill-attachment=f, ring-number=o, veil-color=w",gill-spacing=c,0.8605927552140504
+"gill-spacing=c, ring-number=o, veil-color=w",gill-attachment=f,1.0
+gill-attachment=f,"ring-number=o, veil-color=w, veil-type=p",0.9208996714682841
+ring-number=o,"gill-attachment=f, veil-color=w, veil-type=p",0.9732905982905983
+veil-color=w,"gill-attachment=f, ring-number=o, veil-type=p",0.9197375063099444
+veil-type=p,"gill-attachment=f, ring-number=o, veil-color=w",0.897095027080256
+"gill-attachment=f, ring-number=o","veil-color=w, veil-type=p",0.9989035087719298
+"gill-attachment=f, veil-color=w","ring-number=o, veil-type=p",0.9218315203642803
+"gill-attachment=f, veil-type=p","ring-number=o, veil-color=w",0.9208996714682841
+"ring-number=o, veil-color=w","gill-attachment=f, veil-type=p",1.0
+"ring-number=o, veil-type=p","gill-attachment=f, veil-color=w",0.9732905982905983
+"veil-color=w, veil-type=p","gill-attachment=f, ring-number=o",0.9197375063099444
+"gill-attachment=f, ring-number=o, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, ring-number=o, veil-type=p",veil-color=w,0.9989035087719298
+"gill-attachment=f, veil-color=w, veil-type=p",ring-number=o,0.9218315203642803
+"ring-number=o, veil-color=w, veil-type=p",gill-attachment=f,1.0
+stalk-surface-above-ring=s,"gill-attachment=f, veil-color=w, veil-type=p",0.9629057187017002
+"gill-attachment=f, stalk-surface-above-ring=s","veil-color=w, veil-type=p",1.0
+"stalk-surface-above-ring=s, veil-color=w","gill-attachment=f, veil-type=p",1.0
+"stalk-surface-above-ring=s, veil-type=p","gill-attachment=f, veil-color=w",0.9629057187017002
+"gill-attachment=f, stalk-surface-above-ring=s, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, stalk-surface-above-ring=s, veil-type=p",veil-color=w,1.0
+"stalk-surface-above-ring=s, veil-color=w, veil-type=p",gill-attachment=f,1.0
+gill-attachment=f,"gill-spacing=c, veil-color=w, veil-type=p",0.834217841799343
+gill-spacing=c,"gill-attachment=f, veil-color=w, veil-type=p",0.9691720493247211
+veil-color=w,"gill-attachment=f, gill-spacing=c, veil-type=p",0.8331650681474003
+veil-type=p,"gill-attachment=f, gill-spacing=c, veil-color=w",0.8126538650910882
+"gill-attachment=f, gill-spacing=c","veil-color=w, veil-type=p",1.0
+"gill-attachment=f, veil-color=w","gill-spacing=c, veil-type=p",0.8350619782443715
+"gill-attachment=f, veil-type=p","gill-spacing=c, veil-color=w",0.834217841799343
+"gill-spacing=c, veil-color=w","gill-attachment=f, veil-type=p",0.9972809667673717
+"gill-spacing=c, veil-type=p","gill-attachment=f, veil-color=w",0.9691720493247211
+"veil-color=w, veil-type=p","gill-attachment=f, gill-spacing=c",0.8331650681474003
+"gill-attachment=f, gill-spacing=c, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, gill-spacing=c, veil-type=p",veil-color=w,1.0
+"gill-attachment=f, veil-color=w, veil-type=p",gill-spacing=c,0.8350619782443715
+"gill-spacing=c, veil-color=w, veil-type=p",gill-attachment=f,0.9972809667673717
+gill-spacing=c,"ring-number=o, veil-color=w, veil-type=p",0.920728126834997
+ring-number=o,"gill-spacing=c, veil-color=w, veil-type=p",0.8376068376068376
+veil-color=w,"gill-spacing=c, ring-number=o, veil-type=p",0.7915194346289752
+veil-type=p,"gill-spacing=c, ring-number=o, veil-color=w",0.7720334810438207
+"gill-spacing=c, ring-number=o","veil-color=w, veil-type=p",0.9702970297029703
+"gill-spacing=c, veil-color=w","ring-number=o, veil-type=p",0.9474320241691843
+"gill-spacing=c, veil-type=p","ring-number=o, veil-color=w",0.920728126834997
+"ring-number=o, veil-color=w","gill-spacing=c, veil-type=p",0.8605927552140504
+"ring-number=o, veil-type=p","gill-spacing=c, veil-color=w",0.8376068376068376
+"veil-color=w, veil-type=p","gill-spacing=c, ring-number=o",0.7915194346289752
+"gill-spacing=c, ring-number=o, veil-color=w",veil-type=p,1.0
+"gill-spacing=c, ring-number=o, veil-type=p",veil-color=w,0.9702970297029703
+"gill-spacing=c, veil-color=w, veil-type=p",ring-number=o,0.9474320241691843
+"ring-number=o, veil-color=w, veil-type=p",gill-spacing=c,0.8605927552140504
+gill-attachment=f,"gill-spacing=c, ring-number=o, veil-type=p",0.7925195855446044
+gill-spacing=c,"gill-attachment=f, ring-number=o, veil-type=p",0.920728126834997
+ring-number=o,"gill-attachment=f, gill-spacing=c, veil-type=p",0.8376068376068376
+veil-type=p,"gill-attachment=f, gill-spacing=c, ring-number=o",0.7720334810438207
+"gill-attachment=f, gill-spacing=c","ring-number=o, veil-type=p",0.9500151469251741
+"gill-attachment=f, ring-number=o","gill-spacing=c, veil-type=p",0.8596491228070176
+"gill-attachment=f, veil-type=p","gill-spacing=c, ring-number=o",0.7925195855446044
+"gill-spacing=c, ring-number=o","gill-attachment=f, veil-type=p",0.9702970297029703
+"gill-spacing=c, veil-type=p","gill-attachment=f, ring-number=o",0.920728126834997
+"ring-number=o, veil-type=p","gill-attachment=f, gill-spacing=c",0.8376068376068376
+"gill-attachment=f, gill-spacing=c, ring-number=o",veil-type=p,1.0
+"gill-attachment=f, gill-spacing=c, veil-type=p",ring-number=o,0.9500151469251741
+"gill-attachment=f, ring-number=o, veil-type=p",gill-spacing=c,0.8596491228070176
+"gill-spacing=c, ring-number=o, veil-type=p",gill-attachment=f,0.9702970297029703
+gill-size=b,"gill-attachment=f, veil-color=w, veil-type=p",0.9625801853171776
+"gill-attachment=f, gill-size=b","veil-color=w, veil-type=p",1.0
+"gill-size=b, veil-color=w","gill-attachment=f, veil-type=p",0.9966789667896679
+"gill-size=b, veil-type=p","gill-attachment=f, veil-color=w",0.9625801853171776
+"gill-attachment=f, gill-size=b, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, gill-size=b, veil-type=p",veil-color=w,1.0
+"gill-size=b, veil-color=w, veil-type=p",gill-attachment=f,0.9966789667896679
+gill-attachment=f,"gill-spacing=c, ring-number=o, veil-color=w, veil-type=p",0.7925195855446044
+gill-spacing=c,"gill-attachment=f, ring-number=o, veil-color=w, veil-type=p",0.920728126834997
+ring-number=o,"gill-attachment=f, gill-spacing=c, veil-color=w, veil-type=p",0.8376068376068376
+veil-color=w,"gill-attachment=f, gill-spacing=c, ring-number=o, veil-type=p",0.7915194346289752
+veil-type=p,"gill-attachment=f, gill-spacing=c, ring-number=o, veil-color=w",0.7720334810438207
+"gill-attachment=f, gill-spacing=c","ring-number=o, veil-color=w, veil-type=p",0.9500151469251741
+"gill-attachment=f, ring-number=o","gill-spacing=c, veil-color=w, veil-type=p",0.8596491228070176
+"gill-attachment=f, veil-color=w","gill-spacing=c, ring-number=o, veil-type=p",0.793321527953453
+"gill-attachment=f, veil-type=p","gill-spacing=c, ring-number=o, veil-color=w",0.7925195855446044
+"gill-spacing=c, ring-number=o","gill-attachment=f, veil-color=w, veil-type=p",0.9702970297029703
+"gill-spacing=c, veil-color=w","gill-attachment=f, ring-number=o, veil-type=p",0.9474320241691843
+"gill-spacing=c, veil-type=p","gill-attachment=f, ring-number=o, veil-color=w",0.920728126834997
+"ring-number=o, veil-color=w","gill-attachment=f, gill-spacing=c, veil-type=p",0.8605927552140504
+"ring-number=o, veil-type=p","gill-attachment=f, gill-spacing=c, veil-color=w",0.8376068376068376
+"veil-color=w, veil-type=p","gill-attachment=f, gill-spacing=c, ring-number=o",0.7915194346289752
+"gill-attachment=f, gill-spacing=c, ring-number=o","veil-color=w, veil-type=p",1.0
+"gill-attachment=f, gill-spacing=c, veil-color=w","ring-number=o, veil-type=p",0.9500151469251741
+"gill-attachment=f, gill-spacing=c, veil-type=p","ring-number=o, veil-color=w",0.9500151469251741
+"gill-attachment=f, ring-number=o, veil-color=w","gill-spacing=c, veil-type=p",0.8605927552140504
+"gill-attachment=f, ring-number=o, veil-type=p","gill-spacing=c, veil-color=w",0.8596491228070176
+"gill-attachment=f, veil-color=w, veil-type=p","gill-spacing=c, ring-number=o",0.793321527953453
+"gill-spacing=c, ring-number=o, veil-color=w","gill-attachment=f, veil-type=p",1.0
+"gill-spacing=c, ring-number=o, veil-type=p","gill-attachment=f, veil-color=w",0.9702970297029703
+"gill-spacing=c, veil-color=w, veil-type=p","gill-attachment=f, ring-number=o",0.9474320241691843
+"ring-number=o, veil-color=w, veil-type=p","gill-attachment=f, gill-spacing=c",0.8605927552140504
+"gill-attachment=f, gill-spacing=c, ring-number=o, veil-color=w",veil-type=p,1.0
+"gill-attachment=f, gill-spacing=c, ring-number=o, veil-type=p",veil-color=w,1.0
+"gill-attachment=f, gill-spacing=c, veil-color=w, veil-type=p",ring-number=o,0.9500151469251741
+"gill-attachment=f, ring-number=o, veil-color=w, veil-type=p",gill-spacing=c,0.8605927552140504
+"gill-spacing=c, ring-number=o, veil-color=w, veil-type=p",gill-attachment=f,1.0
