@@ -69,7 +69,7 @@ def plot_normalized_times(processor_counts, times):
     plt.xlabel('Number of processors')
     plt.ylabel('Normalized Response Time')
     plt.title('Weak Scaling: Normalized Response Time vs. Number of Processors')
-    plt.savefig(f"results/scaleup_plot_mushroom_apriori_supp={min_support_threshold}conf={min_confidence_threshold}.png")
+    plt.savefig(f"results/scaleup_plot_chicago_crime_supp={min_support_threshold}conf={min_confidence_threshold}.png")
 
     plt.grid(True)
     plt.legend()
@@ -80,11 +80,11 @@ def plot_normalized_times(processor_counts, times):
         print(f"{p:<10} | {t:<10.2f} | {norm:.2f}")
 
 if __name__ == "__main__":
-    df = pd.read_pickle("/workspaces/apriori-parallel/data/mushroom_apriori_df.pkl")
+    df = pd.read_pickle("/workspaces/apriori-parallel/data/chicago_crime_df.pkl")
     itemset_col = 'Categories'
-    min_support_threshold = 0.5
-    min_confidence_threshold = 0.7
-    processor_counts = [1, 2, 4, 6, 8, 10, 12, 24, 48, 96]
+    min_support_threshold = 0.01
+    min_confidence_threshold = 0.4
+    processor_counts = [1, 2, 4, 6, 8, 10, 12, 24, 32]
 
     times = benchmark_weak_scaling(
         df, itemset_col, min_support_threshold, min_confidence_threshold, processor_counts

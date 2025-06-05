@@ -31,7 +31,6 @@ def generate_candidates(pruned_support, k):
             l1 = prev_frequent_itemsets[i]
             l2 = prev_frequent_itemsets[j]
 
-            # Join step: combine if first (k-2) items are equal
             if l1[:k-2] == l2[:k-2]:
                 candidate = tuple(sorted(set(l1) | set(l2)))
                 if len(candidate) == k:
@@ -49,23 +48,21 @@ def generate_association_rules(all_supports, min_confidence_threshold):
     rules = []
     for itemset in all_supports:
         if len(itemset) < 2:
-            continue  # Cannot generate rules from 1-itemsets
+            continue
 
         itemset_support = all_supports[itemset]
 
-        # Try all possible non-empty antecedents
         for i in range(1, len(itemset)):
             for antecedent in combinations(itemset, i):
                 antecedent = tuple(sorted(antecedent))
                 consequent = tuple(sorted(set(itemset) - set(antecedent)))
 
                 if not consequent:
-                    continue  # skip empty consequents
+                    continue
 
                 if antecedent in all_supports:
                     antecedent_support = all_supports[antecedent]
                     if antecedent_support > 0:
-                      #Counting confidence = eg. support(Fiction, Romance) / support(Fiction) 
                         confidence = itemset_support / antecedent_support
                         if confidence >= min_confidence_threshold:
                             rules.append((antecedent, consequent, confidence))
@@ -76,7 +73,7 @@ def generate_association_rules(all_supports, min_confidence_threshold):
 def calculate_partial_support(args):
     partition_idx, partition_df, itemset_col, candidate_itemsets = args
 
-    pid = os.getpid()  # Process ID
+    pid = os.getpid()
     #print(f"[Process {pid}] Starting partition {partition_idx} with {len(partition_df)} transactions.")  
     #print(partition_df)
     return calculate_support(partition_df, itemset_col, candidate_itemsets)
@@ -110,62 +107,68 @@ def calculate_support_parallel(df, itemset_col, candidate_itemsets, n_partitions
     final_support = {itemset: count / total_transactions for itemset, count in aggregated_counts.items()}
     return final_support
 
+def run_apriori(df, itemset_col, min_support_threshold, min_confidence_threshold, n_partitions):
+    all_items = set()
+    for categories in df[itemset_col]:
+        all_items.update(categories.split(", "))
+
+    all_supports = {}
+    size = 1
+
+    pruned_support = prune(
+        calculate_support_parallel(df, itemset_col, [(item,) for item in all_items], n_partitions),
+        min_support_threshold
+    )
+    all_supports.update(pruned_support)
+
+    while pruned_support:
+        size += 1
+        candidate_itemsets = generate_candidates(pruned_support, size)
+        if not candidate_itemsets:
+            break
+
+        support_itemsets = calculate_support_parallel(df, itemset_col, candidate_itemsets, n_partitions)
+        pruned_support = prune(support_itemsets, min_support_threshold)
+
+        if pruned_support:
+            all_supports.update(pruned_support)
+        else:
+            break
+
+    rules = generate_association_rules(all_supports, min_confidence_threshold)
+    return all_supports, rules
 
 if __name__ == "__main__":
-  df = pd.read_pickle("/workspaces/apriori-parallel/data/grocery_df.pkl")
-  total_transactions = len(df)
+    df = pd.read_pickle("/workspaces/apriori-parallel/data/mushroom_apriori_df.pkl")
+    print(df.head())
+    itemset_col = 'Categories'
+    min_support_threshold = 0.9
+    min_confidence_threshold = 0.6
+    n_partitions = 16
 
-  itemset_col = 'Categories'
-  all_items = set()
-  for categories in df[itemset_col]:
-    all_items.update(categories.split(", "))
-  
-  min_support_threshold = 0.3
-  min_confidence_threshold = 0.5
-
-  all_supports = {}
-  size = 1
-
-  n_partitions=25
-
-  # Step 1: Initial 1-itemsets
-  pruned_support = prune(
-    calculate_support_parallel(df, itemset_col, [(item,) for item in all_items], n_partitions),
-    min_support_threshold
-  )
-  all_supports.update(pruned_support)
-  print(f"Pruned support after 1-itemsets:")
-  print(pruned_support)
-
-  # Step 2: Iteratively build larger itemsets
-  while pruned_support:
-    size += 1
-    candidate_itemsets = generate_candidates(pruned_support, size)
-    if not candidate_itemsets:
-        break
-
-    support_itemsets = calculate_support_parallel(df, itemset_col, candidate_itemsets, n_partitions)
-    pruned_support = prune(support_itemsets, min_support_threshold)
-
-    if pruned_support:
-        print(f"Pruned support after {size}-itemsets:")
-        print(pruned_support)
-        all_supports.update(pruned_support)
-    else:
-        break
-
-  sorted_supports = dict(
-    sorted(
-        all_supports.items(),
-        key=lambda x: (len(x[0]), x[0])
+    start_time = time.time()
+    all_supports, rules = run_apriori(
+        df,
+        itemset_col,
+        min_support_threshold,
+        min_confidence_threshold,
+        n_partitions
     )
-  )
+    elapsed_time = time.time() - start_time
 
-  pp = pprint.PrettyPrinter(indent=2, width=100)
-  print("========= All Supports =========")
-  pp.pprint(sorted_supports)
+    sorted_supports = dict(
+        sorted(
+            all_supports.items(),
+            key=lambda x: (len(x[0]), x[0])
+        )
+    )
 
-  rules = generate_association_rules(all_supports, min_confidence_threshold)
-  print("\nAssociation Rules:")
-  for antecedent, consequent, confidence in rules:
-      print(f"Rule: {antecedent} -> {consequent}, Confidence: {confidence:.2f}")
+    pp = pprint.PrettyPrinter(indent=2, width=100)
+    print("\n========= All Supports =========")
+    pp.pprint(sorted_supports)
+
+    print("\nAssociation Rules:")
+    for antecedent, consequent, confidence in rules:
+        print(f"Rule: {antecedent} -> {consequent}, Confidence: {confidence:.2f}")
+
+    print(f"\nExecution time: {elapsed_time:.2f} seconds")

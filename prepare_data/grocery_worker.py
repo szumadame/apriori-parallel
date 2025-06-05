@@ -34,7 +34,7 @@ df_encoded  = pd.DataFrame(te_ary, columns=te.columns_)
 
 #print(df_encoded[:5])
 
-minsup = 0.3 
+minsup = 0.25 
 frequent_itemsets = apriori(df_encoded, min_support=minsup, use_colnames=True)
 
 if frequent_itemsets.empty:
@@ -43,7 +43,7 @@ else:
     print("Frequent Itemsets:")
     print(frequent_itemsets)
 
-    minconf = 0.3
+    minconf = 0.5
     rules = association_rules(frequent_itemsets, metric="confidence", min_threshold=minconf)
     print("\nAssociation Rules:")
     print(rules[['antecedents', 'consequents', 'support', 'confidence', 'lift']])

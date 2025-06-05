@@ -34,7 +34,7 @@ df_encoded  = pd.DataFrame(te_ary, columns=te.columns_)
 
 #print(df_encoded[:5])
 
-minsup = 0.01
+minsup = 0.015
 frequent_itemsets = apriori(df_encoded, min_support=minsup, use_colnames=True)
 
 if frequent_itemsets.empty:

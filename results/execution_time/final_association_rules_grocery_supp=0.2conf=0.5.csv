@@ -1,0 +1,42 @@
+Antecedent,Consequent,Confidence
+cracker,heineken,0.75
+heineken,cracker,0.61
+cracker,soda,0.514344262295082
+soda,cracker,0.7893081761006289
+baguette,hering,0.635204081632653
+hering,baguette,0.5123456790123456
+artichok,heineken,0.8262295081967214
+corned_b,olives,0.6061381074168798
+olives,corned_b,0.5010570824524313
+turkey,olives,0.7809187279151943
+hering,heineken,0.5925925925925927
+hering,olives,0.5267489711934157
+olives,hering,0.5412262156448203
+artichok,avocado,0.6918032786885245
+avocado,artichok,0.581267217630854
+chicken,heineken,0.638095238095238
+avocado,baguette,0.5922865013774105
+baguette,avocado,0.548469387755102
+baguette,heineken,0.6658163265306122
+corned_b,hering,0.6265984654731458
+hering,corned_b,0.5041152263374485
+coke,ice_crea,0.7432432432432433
+ice_crea,coke,0.7028753993610223
+bourbon,cracker,0.5955334987593052
+bourbon,heineken,0.521091811414392
+bourbon,olives,0.607940446650124
+olives,bourbon,0.517970401691332
+avocado,heineken,0.6859504132231404
+soda,heineken,0.8081761006289309
+corned_b,"hering, olives",0.5166240409207161
+"corned_b, hering",olives,0.8244897959183672
+"corned_b, olives",hering,0.8523206751054851
+"hering, olives",corned_b,0.7890625
+baguette,"heineken, hering",0.5459183673469388
+"baguette, heineken",hering,0.8199233716475096
+"baguette, hering",heineken,0.8594377510040161
+"heineken, hering",baguette,0.7430555555555555
+soda,"cracker, heineken",0.7358490566037735
+"cracker, heineken",soda,0.639344262295082
+"cracker, soda",heineken,0.9322709163346613
+"heineken, soda",cracker,0.9105058365758754

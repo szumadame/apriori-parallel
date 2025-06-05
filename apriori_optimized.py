@@ -109,7 +109,7 @@ def generate_association_rules(all_supports, min_confidence_threshold):
 
     for itemset in all_supports:
         if len(itemset) < 2:
-            continue  # Cannot generate rules from 1-itemsets
+            continue
 
         itemset_support = all_supports[itemset]
 
@@ -120,12 +120,11 @@ def generate_association_rules(all_supports, min_confidence_threshold):
                 consequent = tuple(sorted(set(itemset) - set(antecedent)))
 
                 if not consequent:
-                    continue  # skip empty consequents
+                    continue
 
                 if antecedent in all_supports:
                     antecedent_support = all_supports[antecedent]
                     if antecedent_support > 0:
-                      #Counting confidence = eg. support(Fiction, Romance) / support(Fiction) 
                         confidence = itemset_support / antecedent_support
                         if confidence >= min_confidence_threshold:
                             rules.append((antecedent, consequent, confidence))
@@ -144,7 +143,7 @@ if __name__ == "__main__":
   all_supports = {}
   size = 1
 
-  # Step 1: Initial 1-itemsets
+  # Initial 1-itemsets
   pruned_support = prune(
     calculate_support(df, itemset_col, [(item,) for item in all_items]),
     min_support_threshold
@@ -153,7 +152,6 @@ if __name__ == "__main__":
   print(f"Pruned support after 1-itemsets:")
   print(pruned_support)
 
-  # Step 2: Iteratively build larger itemsets
   while pruned_support:
     size += 1
     candidate_itemsets = generate_candidates(pruned_support, size)
