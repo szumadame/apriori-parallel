@@ -52,7 +52,7 @@ if __name__ == "__main__":
     itemset_col = 'Categories'
     min_confidence_threshold = 0.4
 
-    num_runs = 1
+    num_runs = 5
     all_times = []
 
     for i in range(num_runs):
